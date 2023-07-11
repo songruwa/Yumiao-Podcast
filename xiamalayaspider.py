@@ -52,6 +52,8 @@ def getAllpage(url, category):
         sequence_file = open(os.path.join('/Users/wsr/Desktop/Yumiao/JunxuanGuo/', category, 'sequence.txt'), 'w')
         audio_count = 1  # Initialize a counter to keep track of the number of audios scraped
 
+
+        # 之后换成[25: larger number]
         for i in allFM[:25]:
             item={}
             item['title']=i.xpath(" div / a / span/text()")[0]
